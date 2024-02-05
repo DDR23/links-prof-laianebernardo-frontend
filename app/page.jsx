@@ -1,6 +1,7 @@
 import './index.scss'
 import Buttons from '@/components/Buttons';
 import Image from 'next/image'
+import { BiLogoGmail } from "react-icons/bi";
 
 export default function App() {
   return (
@@ -13,7 +14,10 @@ export default function App() {
           </div>
           <div className="app__contentbtns">
             <Buttons name="Visite meu Blogger" link="https://proflaianebernardo.blogspot.com/?m=1" target="" />
-            <Buttons name="Gmail" link="https://mail.google.com/mail/u/0/?hl=pt-BR#inbox?compose=GTvVlcSHvbGccchHFBKtvgkGCLWDHbdhfkTgVlxFWhLKthzmtlBGJpQpGNmXTDVlcSXjjvlrTSGSD" target="" />
+            <div className='app__contentcontacts'>
+              <BiLogoGmail size={20}/>
+              <p>proflaianebernardo@gmail.com</p>
+            </div>
           </div>
         </div>
       </div>
