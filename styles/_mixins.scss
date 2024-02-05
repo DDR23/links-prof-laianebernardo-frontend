@@ -1,4 +1,4 @@
-@use '../variables/variables' as *;
+@use './variables' as *;
 
 
 
@@ -25,21 +25,19 @@
 // BUTTON-MODEL--------------------------------------
 
 @mixin button-model(){
-    padding: .5rem 1rem;
-    background-color: $cor-branco;
-    border-radius: $borda-pequena;
-    border: $borda;
-    box-shadow: $borda-shadow;
-    color: $cor-font-branco;
-    font-size: $tam-font-20;
-    font-weight: 800;
-    text-transform: uppercase;
+    padding: .7rem 1rem;
+    background-color: $cor-btn-bg;
+    border-radius: $borda;
+    color: $cor-btn-font;
+    border: none;
     cursor: pointer;
     transition-duration: .2s;
 }
 
 @mixin button-model-hover(){
-    background-color: $cor-branco;
+    background-color: $cor-btn-bg-hover;
+    color: $cor-btn-font-hover;
+    font-weight: bold;
     transition-duration: .2s;
     transform: translateY(-.1rem);
 }
@@ -48,15 +46,11 @@
 // BUTTON-DISABLED-MODEL--------------------------------------
 
 @mixin button-disabled-model(){
-    padding: .5rem 1rem;
-    background-color: $cor-branco;
-    border-radius: $borda-pequena;
-    border: $borda;
-    box-shadow: $borda-shadow-inset;
-    color: $cor-branco;
-    font-size: $tam-font-20;
-    font-weight: 800;
-    text-transform: uppercase;
+    padding: .7rem 1rem;
+    background-color: $cor-btn-bg-disabled;
+    border-radius: $borda;
+    color: $cor-btn-font-disabled;
+    border: none;
     cursor: default;
 }
 

@@ -1,0 +1,18 @@
+@use '../styles/mixins' as *;
+
+.buttons{
+  width: 20rem;
+  max-width: 65vw;
+  font-size: 16px;
+  @include button-model;
+  
+  &:hover{
+    @include button-model-hover;
+  }
+  
+  &__disabled{
+    width: 20rem;
+    max-width: 65vw;
+    @include button-disabled-model;
+  }
+}

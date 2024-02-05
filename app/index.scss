@@ -1,3 +1,74 @@
+@use '../styles/mixins' as *;
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+
 .app{
-  background-color: bisque;
+  @include flex-position(
+    flex,
+    column,
+    auto,
+    center,
+    center,
+    center
+  );
+  width: 100vw;
+  height: 100vh;
+  font-family: "Diphylleia", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+
+  &__content{
+    width: 80vw;
+    max-width: 30rem;
+    max-height: 100rem;
+    background-color: #00000025;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.596);
+  }
+  
+  &__contentperfil{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+    margin: 2rem;
+    margin-bottom: 0;
+    gap: 1.5rem;
+    color: #fff;
+    
+    img{
+      border-radius: 50%;
+      border: 3px solid #fff;
+    }
+
+    .icons{
+      display: flex;
+      gap: .5rem;
+      cursor: pointer;
+    }
+
+    svg{
+      display: flex;
+      color: #fff;
+    }
+  }
+  
+  &__contentbtns{
+    @include flex-position(
+      flex,
+      column,
+      auto,
+      center,
+      center,
+      center
+    );
+      // background-color: chartreuse;
+    padding: 2rem;
+    gap: 1rem;
+  }
 }
