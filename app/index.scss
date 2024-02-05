@@ -80,3 +80,18 @@
     gap: .5rem;
   }
 }
+
+@include viewport(sm){
+  .app__contentcontacts p{
+    font-size: 14px;
+  }
+}
+
+@include viewport(xs){
+  .app__contentperfil{
+    font-size: 20px;
+  }
+  .app__contentcontacts p{
+    font-size: 12px;
+  }
+}

@@ -16,3 +16,9 @@
     @include button-disabled-model;
   }
 }
+
+@include viewport(sm){
+  .buttons{
+    font-size: 14px;
+  }
+}
