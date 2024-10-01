@@ -1,9 +1,9 @@
-# projeto---FRONTEND---professora-laiane---ROCKETSEAT
+# projeto---FRONTEND---card-apresentation---PROFLAIANEBERNARDO
 
 ## Sobre o projeto
 Esse projeto é uma pagina de apresentação e shortlinks para professora Laiane Bernardo
 
-Projeto hospedado em: https://projeto-card-apresentation-proflaibernardo.vercel.app/
+Projeto hospedado em: https://proflaianebernardo.vercel.app/
 
 ## Comandos para rodar o projeto
 
@@ -16,3 +16,4 @@ Projeto hospedado em: https://projeto-card-apresentation-proflaibernardo.vercel.
 
 ## Screenshots
 ![App Screenshot](/public/picture_01.png)
+![App Screenshot](/public/picture_02.png)
