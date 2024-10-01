@@ -1,11 +1,12 @@
 'use client'
 import { ActionIcon, Avatar, BackgroundImage, Button, Center, Group, Image, Paper, Stack, Title, Transition } from '@mantine/core'
-import { useClipboard } from '@mantine/hooks';
+import { useClipboard } from '@mantine/hooks'
 import { IconBrandBlogger, IconCheck, IconChevronLeft, IconCopy, IconMail, IconShare } from '@tabler/icons-react'
 import { useState } from 'react';
 
 export default function App() {
-  const email = 'proflaianebernardo@gmail.com'
+  const email = 'proflaianebernardo@gmail.com';
+  const myLinkToShare = 'https://proflaianebernardo.vercel.app/';
   const clipboard = useClipboard({ timeout: 1000 });
   const [paperContent, setPaperContent] = useState<'main' | 'share'>('main');
 
@@ -52,8 +53,8 @@ export default function App() {
                   <ActionIcon size='36px' onClick={() => setPaperContent('main')}>
                     <IconChevronLeft size={20} />
                   </ActionIcon>
-                  <Button flex={1} fw='bold' color={clipboard.copied ? 'green' : ''} leftSection={clipboard.copied ? <IconCheck size={20} /> : <IconCopy size={20} />} onClick={() => clipboard.copy(email)} >
-                    {clipboard.copied ? 'Copiado' : 'Copiar email'}
+                  <Button flex={1} fw='bold' color={clipboard.copied ? 'green' : ''} leftSection={clipboard.copied ? <IconCheck size={20} /> : <IconCopy size={20} />} onClick={() => clipboard.copy(myLinkToShare)} >
+                    {clipboard.copied ? 'Copiado' : 'Copiar link'}
                   </Button>
                 </Group>
               </Stack>
