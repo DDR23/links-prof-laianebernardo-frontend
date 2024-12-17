@@ -1,4 +1,4 @@
-# projeto---FRONTEND---card-apresentation---PROFLAIANEBERNARDO
+# links-prof-laianebernardo-frontend
 
 ## Sobre o projeto
 Esse projeto é uma pagina de apresentação e shortlinks para professora Laiane Bernardo
